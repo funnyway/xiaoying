@@ -1,7 +1,7 @@
 import scrapy 
 from scrapy.http import Request 
 from xiaoying.items import XiaoyingItem  # 引入item
-class DoubanSpider(scrapy.Spider):	
+class xiaoyingSpider(scrapy.Spider):	
 	name = "xiaoying"  #这个name是你必须给它一个唯一的名字  后面我们执行文件时的名字
 
 	start_urls = ["https://www.yingzt.com/invest/list"]	#这个列表中的url可以有多个，它会依次都执行，我们这里简单爬取一个	
